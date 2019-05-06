@@ -9,7 +9,7 @@ from API_auto.API_1 import test_case
 import HTMLTestRunnerNew
 
 print(sys.path)
-sys.path.append('../../')
+sys.path.append('./')
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
