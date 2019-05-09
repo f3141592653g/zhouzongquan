@@ -12,6 +12,7 @@ import configparser
 class Regular:
     loan_id = None
     memer_id = None
+
     def context(self, data):
         p = "#(.*?)#"
         while re.search(p, data):
@@ -26,6 +27,5 @@ class Regular:
                 else:
                     print("找不到参数化的key")
                     raise e
-            print(param_price)
             data = re.sub(p, cf, data, count=1)
         return data

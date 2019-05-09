@@ -32,11 +32,15 @@ class Logger:
         my_logger.addHandler(channel)
         my_logger.addHandler(file_log)
 
-        # my_logger.removeHandler(file_log)
-        # my_logger.removeHandler(channel)
-
         file_log.close()
         return my_logger
 
-# logger = Logger("py15").log_input()
+#     def remove_log(self):
+#         self.my_logger.removeHandler(self.file_log)
+#         self.my_logger.removeHandler(self.channel)
+#
+#
+# logger = Logger("py15").log()
+#
 # logger.info("测试一下")
+# logger = Logger("py15").remove_log()

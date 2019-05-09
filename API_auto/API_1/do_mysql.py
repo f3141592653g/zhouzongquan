@@ -34,4 +34,6 @@ class DoMysql:
 
 if __name__ == '__main__':
     DM = DoMysql()
-    one = DM.sel_one('select max(mobilephone) from future.member')
+
+    one = DM.sel_one("SELECT leaveamount FROM future.member where id = '829'")[0]
+    print(one)

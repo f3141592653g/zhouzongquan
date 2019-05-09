@@ -3,14 +3,9 @@
 # @Author   : yuandian
 # @Email    : 919839065@qq.com
 # @file     : class_0312
-import sys
 import unittest
 from API_auto.API_1 import test_case
 import HTMLTestRunnerNew
-
-print(sys.path)
-sys.path.append('././')
-print(sys.path)
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()

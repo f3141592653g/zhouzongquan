@@ -8,6 +8,7 @@ from API_auto.API_1 import file_name
 from API_auto.API_1.HTTP_request import *
 
 
+
 class DoExcel:
     def Get_date(self):
         wb = load_workbook(file_name.case_file)  # 打开excel
@@ -24,7 +25,7 @@ class DoExcel:
                 "data": sheet.cell(i, 4).value,
                 "method": sheet.cell(i, 5).value,
                 "expected": sheet.cell(i, 6).value,
-
+                "sql": sheet.cell(i, 9).value
             }
             null_list_2.append(user)
         return null_list_2
